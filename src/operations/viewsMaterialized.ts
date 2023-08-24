@@ -25,7 +25,7 @@ const storageParameterStr =
   <T extends Nullable<StorageParameters>, K extends keyof T>(storageParameters: T) =>
   (key: K) => {
     const value = storageParameters[key] === true ? '' : ` = ${storageParameters[key]}`
-    return `${key}${value}`
+    return `${String(key)}${value}`
   }
 
 export function dropMaterializedView(mOptions: MigrationOptions) {
