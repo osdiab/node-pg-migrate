@@ -1,5 +1,5 @@
 {
-  "name": "node-pg-migrate",
+  "name": "@osdiab/node-pg-migrate",
   "version": "6.2.2",
   "description": "Postgresql database migration management tool for node.js",
   "author": "Theo Ephraim",
