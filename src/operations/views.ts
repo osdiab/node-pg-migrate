@@ -9,7 +9,7 @@ const viewOptionStr =
   <T extends Nullable<ViewOptions>, K extends keyof T>(options: T) =>
   (key: K) => {
     const value = options[key] === true ? '' : ` = ${options[key]}`
-    return `${key}${value}`
+    return `${String(key)}${value}`
   }
 
 export function dropView(mOptions: MigrationOptions) {
