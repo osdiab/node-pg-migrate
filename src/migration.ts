@@ -7,7 +7,7 @@
  */
 
 import fs from 'fs'
-import mkdirp from 'mkdirp'
+import { sync as mkdirpSync } from 'mkdirp'
 import path from 'path'
 import { DBConnection } from './db'
 import MigrationBuilder from './migration-builder'
@@ -110,7 +110,7 @@ export class Migration implements RunMigration {
     const { filenameFormat = FilenameFormat.timestamp } = options
 
     // ensure the migrations directory exists
-    mkdirp.sync(directory)
+    mkdirpSync(directory)
 
     const now = new Date()
     const time = filenameFormat === FilenameFormat.utc ? now.toISOString().replace(/[^\d]/g, '') : now.valueOf()
