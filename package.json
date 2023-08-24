@@ -1,6 +1,6 @@
 {
   "name": "@osdiab/node-pg-migrate",
-  "version": "6.3.0",
+  "version": "6.3.1",
   "description": "Postgresql database migration management tool for node.js",
   "author": "Theo Ephraim",
   "contributors": [
@@ -46,7 +46,7 @@
   },
   "dependencies": {
     "@types/pg": "^8.10.2",
-    "decamelize": "^6.0.0",
+    "decamelize": "^5.0.1",
     "mkdirp": "~3.0.1",
     "yargs": "~17.7.2"
   },
