@@ -35,5 +35,11 @@ module.exports = {
         '@typescript-eslint/camelcase': 'off',
       },
     },
+    {
+      files: ['test/', 'mocha.bootstrap.ts'],
+      rules: {
+        'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+      },
+    },
   ],
 }
